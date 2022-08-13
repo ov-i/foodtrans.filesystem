@@ -26,7 +26,7 @@ There are two ways to run this project. You can run it in dockerized conatiner o
 First, make sure you have docker installed. If yes, then open your terminal and go to root folder of this repository. Then you can build the docker compose using command:
 
 ```bash
-docker compose up -d build
+docker compose up -d --build
 ```
 If build succedded, you can start using this project
 
