@@ -7,7 +7,15 @@ on:
       - 'feature/**'
 
 jobs:
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v2
   php-cs-fixer:
+    needs: dependency-review
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -44,10 +52,3 @@ jobs:
       env:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
       run: vendor/bin/phpunit
-  docker:
-    needs: symfony-tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build docker image
-        run: docker build . --file Dockerfile --tag foodtrans-filesystem:latest
