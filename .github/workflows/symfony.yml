@@ -43,12 +43,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setting PHP CS Fixer
-      uses: docker://oskarstark/php-cs-fixer-ga
+      - name: PHP-CS-Fixer
+        uses: docker://oskarstark/php-cs-fixer-ga
   docker-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Docker Test
       run: docker build --file Dockerfile --tag foodtrans-filesystem:latest
-
