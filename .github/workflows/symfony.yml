@@ -43,9 +43,7 @@ jobs:
           DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
         run: vendor/bin/phpunit
   docker-tests:
-    needs: 
-      - php-cs-fixer
-      - symfony-tests
+    needs: symfony-tests
     runs-on: ubuntu-latest
     steps:
         uses: actions/checkout@v3
