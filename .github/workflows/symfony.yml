@@ -48,4 +48,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Docker Tester
-      - run: docker build . --file Dockerfile --tag foodtrans-filesystem:latest
+        run: docker build . --file Dockerfile --tag foodtrans-filesystem:latest
