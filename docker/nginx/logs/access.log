@@ -1,2 +1,0 @@
-172.23.0.1 - - [12/Aug/2022:20:02:14 +0000] "GET / HTTP/1.1" 404 9363 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
-172.23.0.1 - - [12/Aug/2022:20:02:15 +0000] "GET /favicon.ico HTTP/1.1" 404 27217 "http://localhost:8001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
