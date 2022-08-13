@@ -7,3 +7,24 @@
 2022/08/12 19:58:38 [notice] 1#1: start worker process 24
 2022/08/12 19:58:38 [notice] 1#1: start worker process 25
 2022/08/12 19:58:38 [notice] 1#1: start worker process 26
+2022/08/12 20:02:14 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET http://localhost:8001/"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 128" while reading response header from upstream, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.23.0.2:9000", host: "localhost:8001"
+2022/08/12 20:02:15 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET http://localhost:8001/favicon.ico" (from "http://localhost:8001/")" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 128" while reading response header from upstream, client: 172.23.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.23.0.2:9000", host: "localhost:8001", referrer: "http://localhost:8001/"
+2022/08/12 20:02:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/12 20:02:53 [notice] 26#26: gracefully shutting down
+2022/08/12 20:02:53 [notice] 25#25: gracefully shutting down
+2022/08/12 20:02:53 [notice] 25#25: exiting
+2022/08/12 20:02:53 [notice] 24#24: gracefully shutting down
+2022/08/12 20:02:53 [notice] 26#26: exiting
+2022/08/12 20:02:53 [notice] 25#25: exit
+2022/08/12 20:02:53 [notice] 24#24: exiting
+2022/08/12 20:02:53 [notice] 26#26: exit
+2022/08/12 20:02:53 [notice] 24#24: exit
+2022/08/12 20:02:53 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/08/12 20:02:53 [notice] 1#1: worker process 25 exited with code 0
+2022/08/12 20:02:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/12 20:02:53 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/08/12 20:02:53 [notice] 1#1: worker process 26 exited with code 0
+2022/08/12 20:02:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/12 20:02:53 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/08/12 20:02:53 [notice] 1#1: worker process 24 exited with code 0
+2022/08/12 20:02:53 [notice] 1#1: exit

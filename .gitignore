@@ -3,6 +3,9 @@
 .vscode/
 .DS_Store
 
+# Docker nginx logs
+./docker/**/*.log
+
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
